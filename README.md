@@ -9,8 +9,11 @@ EMG_CNN_CAE_Package/
 ├── cnn_cae_v2.py      # 主程序 (PyTorch + CUDA)
 ├── README.md          # 本文件
 ├── requirements.txt   # 依赖列表
+├── .gitignore         # Git忽略配置
 └── EMG_data/          # 旧数据集 (CSV格式, 2通道, 10类)
 ```
+
+> **注意**: 训练后的模型文件(.pth)和Ninapro_DB1数据集需单独下载
 
 ## 数据集
 
@@ -23,7 +26,10 @@ EMG_CNN_CAE_Package/
 - **每类动作**: 6次重复
 
 ### 新数据集 (Ninapro_DB1)
-- **路径**: `../Ninapro_DB1/Ninapro_DB1/` (父目录)
+> **注意**: Ninapro_DB1数据集需要单独下载（约1.6GB），不包含在本仓库中
+
+- **下载地址**: http://ninapro.hevs.ch/ (需要注册)
+- **路径**: `../Ninapro_DB1/Ninapro_DB1/` (父目录，需自行放置)
 - **格式**: .mat文件 (scipy.io.loadmat可读取)
 - **通道数**: 10通道
 - **受试者**: S1 ~ S27
